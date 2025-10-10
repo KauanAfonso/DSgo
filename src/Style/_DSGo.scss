@@ -1,5 +1,5 @@
 .corpo {
-  background-image: url('../assets/arenaPokemon.png'); 
+  background-image: url('../assets/db_arena.png'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -8,13 +8,13 @@
   position: relative;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #ebe1e11a;
-    backdrop-filter: blur(2.5px); 
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   inset: 0;
+  //   background: #ebe1e11a;
+  //   backdrop-filter: blur(2.5px); 
+  // }
 
   > * {
     position: relative;
