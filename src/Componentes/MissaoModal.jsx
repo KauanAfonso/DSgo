@@ -50,13 +50,13 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
         required
       />
 
-      <div className="modal-botoes">
+      <nav className="modal-botoes">
         <button onClick={verificarResposta}>Enviar</button>
         <button onClick={onClose}>Fechar</button>
-      </div>
+      </nav>
 
       {resultado && (
-        <div className="resultado">
+        <article className="resultado">
           <p>{resultado}</p>
           {status === "sucesso" && (
             <img
@@ -72,7 +72,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
               width="100"
             />
           )}
-        </div>
+        </article>
       )}
     </dialog>
   );

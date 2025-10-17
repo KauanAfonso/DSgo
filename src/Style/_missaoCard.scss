@@ -83,3 +83,16 @@
   margin-bottom: 0.5rem;
   color: #6a1b9a;
 }
+
+
+@media(max-width: 480px){
+  .conteiner{
+    margin: 1rem;
+  }
+}
+
+@media(max-width: 350px){
+  .missao-card{
+    width: 250px;
+  }
+}

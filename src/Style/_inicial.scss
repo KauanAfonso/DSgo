@@ -1,4 +1,7 @@
+
+
 @use './variaveis' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Ranchers&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 .inicial {
     display: flex;
     flex-direction: column;
@@ -9,6 +12,32 @@
 
     .logo {
         height: 80%;
+        filter: brightness(0.4); /* deixa mais escura (0 = preto total, 1 = normal) */
+    }
+
+    .titleSection {
+      z-index: 100;
+      position: absolute;
+      bottom: 50%;
+    }
+
+    .titleSection h2{
+       color: #fff;
+      font-size: 4em;
+      font-family: "Winky Rough", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .titleSection h3{
+      text-align: center;
+      color: #f3f3f3;
+      font-size: 1.5em;
+      font-family: "Winky Rough", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
     }
 
     .entrar {

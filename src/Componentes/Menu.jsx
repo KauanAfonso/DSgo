@@ -7,37 +7,43 @@ export function Menu() {
     return (
         <div className='menu'>
             <ul>
-                <Link to = 'missao'>
                 <li>
+                    <Link to="missao">
                     <figure>
-                        <img src={missao} alt="Missões" />
+                        <img src={missao} alt="Missões photo" />
                         <figcaption>Missões</figcaption>
                     </figure>
+                    </Link>
                 </li>
-                </Link>
-                
+
                 <li>
+                    <Link to="inventario">
                     <figure>
-                        <img src={bau} alt="Inventário" />
-                        <figcaption>Inventário</figcaption>
+                    <img src={bau} alt="Inventário photo" />
+                    <figcaption>Inventário</figcaption>
                     </figure>
-                    
+                    </Link>
                 </li>
+
                 <li>
+                    <Link to="geolocalizacao">
                     <figure>
-                        <img src={mapa} alt="GeoLocalização" />
-                        <figcaption>GeoLocalização</figcaption>
+                    <img src={mapa} alt="GeoLocalização photo" />
+                    <figcaption>GeoLocalização</figcaption>
                     </figure>
+                    </Link>
                 </li>
-                 <li>
-                    
+
+                <li>
+                    <Link to="camera">
                     <figure>
-                        <img src={camera} alt="camera" />
-                        <figcaption>Camera</figcaption>
+                    <img src={camera} alt="Câmera" />
+                    <figcaption>Câmera</figcaption>
                     </figure>
-                    
+                    </Link>
                 </li>
-            </ul>
+                </ul>
+
         </div>
     )
 }
