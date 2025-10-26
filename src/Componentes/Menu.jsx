@@ -1,7 +1,8 @@
-import missao from '../assets/missao_tratado.png';
-import mapa from '../assets/mapa_tratado.png';
-import bau from '../assets/bau_tratado.png';
-import camera from '../assets/camera_tratado.png';
+
+import esfera1 from "../assets/esfera1.png"
+import esfera2 from "../assets/esfera2.png"
+import esfera3 from "../assets/esfera3.png"
+import esfera4 from "../assets/esfera4.png"
 import { Link } from 'react-router-dom'
 export function Menu() {
     return (
@@ -10,7 +11,7 @@ export function Menu() {
                 <li>
                     <Link to="missao">
                     <figure>
-                        <img src={missao} alt="Missões photo" />
+                        <img src={esfera1} alt="Esfera 01 icone" />
                         <figcaption>Missões</figcaption>
                     </figure>
                     </Link>
@@ -19,7 +20,7 @@ export function Menu() {
                 <li>
                     <Link to="inventario">
                     <figure>
-                    <img src={bau} alt="Inventário photo" />
+                    <img src={esfera2} alt="Esfera 02 icone" />
                     <figcaption>Inventário</figcaption>
                     </figure>
                     </Link>
@@ -28,7 +29,7 @@ export function Menu() {
                 <li>
                     <Link to="geolocalizacao">
                     <figure>
-                    <img src={mapa} alt="GeoLocalização photo" />
+                    <img src={esfera3} alt="Esfera 03 icone" />
                     <figcaption>GeoLocalização</figcaption>
                     </figure>
                     </Link>
@@ -37,7 +38,7 @@ export function Menu() {
                 <li>
                     <Link to="camera">
                     <figure>
-                    <img src={camera} alt="Câmera" />
+                    <img src={esfera4} alt="Esfera 04 icone" />
                     <figcaption>Câmera</figcaption>
                     </figure>
                     </Link>
