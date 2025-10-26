@@ -3,8 +3,16 @@ export function MissaoCard({ missao, onIniciarMissao, concluida }) {
     onIniciarMissao(missao);
   }
 
+
+  /*
+  
+  Componente MissaoCard que exibe informações sobre uma missão específica e permite
+  iniciar a missão se ela não estiver concluída.
+  
+  */
   return (
     <article
+      aria-label="Card para as missões"
       className='missao-card'
       id="article_card"
       style={{ backgroundColor: concluida ? "lightgray" : "white" }}

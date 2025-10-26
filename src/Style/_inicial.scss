@@ -80,3 +80,30 @@
 
 
 }
+
+
+@media (max-width: 480px) {
+    .inicial {
+
+        .titleSection{
+          position: absolute;
+        }
+
+       .titleSection h2 {
+            font-size: 2.5rem; 
+        }
+
+        .titleSection h3 {
+            font-size: 1rem; 
+        }
+      
+        .logo {
+            height: 60%; 
+        }
+
+        .entrar {
+            padding: 10px 30px;
+            font-size: 1rem;
+        }
+    }
+}

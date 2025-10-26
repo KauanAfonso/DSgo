@@ -23,7 +23,7 @@ export function Inventario() {
 
   return (
     <main className="conteiner">
-        <section className="inventario">
+      <section className="inventario">
       <h2>Inventário</h2>
       <button className="limpar-inventario" onClick={limparInventario}>
             Limpar Inventário

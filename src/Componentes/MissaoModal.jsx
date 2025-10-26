@@ -30,6 +30,14 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
     }
   };
 
+
+  /*
+  
+  Componente MissaoModal que exibe um modal para o usuário responder a uma missão.
+  Ele verifica a resposta e fornece feedback visual sobre o sucesso ou falha da tentativa.
+  
+  */
+
   return (
     <dialog open className="modal">
       <h2 className="titulo" id="titulo-missao">

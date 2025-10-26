@@ -1,6 +1,12 @@
 import logo from '../assets/logo.jpg';
 import { useNavigate } from 'react-router-dom';
 
+
+/*
+
+componente inicial que exibe a tela de inicio com o logo e um botão para entrar na aplicação.
+
+*/
 export function Inicial() {
     const navigate =useNavigate();
 
