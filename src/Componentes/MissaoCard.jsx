@@ -1,35 +1,19 @@
 export function MissaoCard({ missao, onIniciarMissao, concluida }) {
-  function handleClick() {
-    onIniciarMissao(missao);
-  }
-
-
-  /*
-  
-  Componente MissaoCard que exibe informações sobre uma missão específica e permite
-  iniciar a missão se ela não estiver concluída.
-  
-  */
+  const inventario = JSON.parse(localStorage.getItem("inventario")) || [];
+  const concluidaLocal = inventario.some((f) => f.id === missao.id);
+  const isConcluida = concluida !== undefined ? concluida : concluidaLocal;
+ 
   return (
-    <article
-      aria-label="Card para as missões"
-      className='missao-card'
-      id="article_card"
-      style={{ backgroundColor: concluida ? "lightgray" : "white" }}
-    >
+    <article className="missao-card">
       <h3 id={missao.id}>{missao.titulo}</h3>
       <p>{missao.missao}</p>
       <button
-        onClick={handleClick}
-        disabled={concluida}
-        style={{
-          backgroundColor: concluida ? "gray" : "#007bff",
-          color: "white",
-          cursor: concluida ? "not-allowed" : "pointer",
-        }}
+        onClick={() => onIniciarMissao(missao)}
+        disabled={isConcluida}
       >
-        {concluida ? "Missão concluída" : "Iniciar Missão"}
+        {isConcluida ? "Concluída" : "Iniciar missão"}
       </button>
     </article>
   );
 }
+ 
