@@ -34,7 +34,7 @@ export function Menu() {
                 </li>
 
                 <li>
-                    <Link to="geolocalizacao">
+                    <Link to="mapa">
                     <figure aria-label="Navegação para tela de geolocalização">
                     <img src={esfera3} alt="Esfera 03 icone" />
                     <figcaption>GeoLocalização</figcaption>

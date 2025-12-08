@@ -5,7 +5,7 @@ import { DSGo } from "../Paginas/DSGo";
 import { Missao} from "../Paginas/Missao";
 import { Inventario } from "../Paginas/Inventario";
 import { Camera } from "../Paginas/Camera";
-// import { GeolocalizacaoMapa } from "../Componentes/GeolocalizacaoMapa";
+import { Geolocalizacao } from "../Paginas/Geolocalizacao";
 
 export function Rotas() {
     return (
@@ -16,6 +16,7 @@ export function Rotas() {
                 <Route path="missao" element={<Missao />} /> 
                 <Route path="inventario" element={<Inventario/>} />
                 <Route path="camera" element={<Camera/>} />
+                <Route path="mapa" element={<Geolocalizacao/>} />
             </Route>   
         </Routes>
     );
